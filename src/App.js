@@ -45,7 +45,7 @@ class App extends Component{
     return(
       <div>
         <PhoneForm number={this.getGrade} />
-        <PhoneInfoList data={gradelist} onRemove={deleteGrade} />
+        <PhoneInfoList data={gradelist}  />
       </div>
     );
   }
