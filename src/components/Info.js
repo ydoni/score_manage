@@ -102,7 +102,7 @@ class Info extends Component {
 						<div>
 							<input placeholder="학점 수정" name="avg_grade" value ={this.state.avg_grade} onChange={this.onChangeValue}/>
 						</div>
-						<button onClick = {this.toggleEditMode}> 적용 </button>
+						<button className="acceptbtn buttonbox" onClick = {this.toggleEditMode}> 적용 </button>
 					</div>
 				</div>
 			);

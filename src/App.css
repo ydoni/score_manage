@@ -1,21 +1,42 @@
 body {background-color: #fdfdfd; font-family: 'NanumBarunGothic', 'serif';}
-h1 {text-align:center;}
+h1 {text-align:center; margin-top:50px;}
 
 
 
 
 /*Info.js*/
 .bigbox {width:1000px; margin:50px auto;}
-.listbox {width:200px; height:160px; background-color: #fff; border:1px solid #ededed; padding:10px; margin:5px;
+.listbox {width:200px; height:140px; background-color: #fff; border:1px solid #ededed; padding:10px; margin:5px;
 	float:left;}
 .listbox div {margin-top:5px;}
 .edit_container { text-align:center;}
-.buttonbox {margin-top:30px; border-radius:5px; cursor:pointer; width:60px; height:25px;}
-.update {background-color:#fff; border:1px solid blue; margin-right:10px;}
-.delete {background-color:#fff; border:1px solid red;}
+
+.buttonbox {margin-top:10px; border-radius:5px; cursor:pointer; width:60px; height:25px; text-shadow: 0 1px 1px rgba(0,0,0,.1);
+-webkit-transition: all 200ms cubic-bezier(0.350, 0.300, 0.100, 1.000);
+	-moz-transition: all 200ms cubic-bezier(0.350, 0.300, 0.100, 1.000);
+	-ms-transition: all 200ms cubic-bezier(0.350, 0.300, 0.100, 1.000);
+	-o-transition: all 200ms cubic-bezier(0.350, 0.300, 0.100, 1.000);
+	transition: all 200ms cubic-bezier(0.350, 0.300, 0.100, 1.000);}
+
+.update {color: #fff; border: solid 1px #0076a3; margin-right:10px;
+    background: #0095cd; background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));}
+.update:hover {color: #fff; background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));}
+.update:active {color: #80bed6; background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));}
+
+.delete {color: #fff; border: solid 1px #980c10; background: #d81b21;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));}
+.delete:hover {color: #fff; background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));}
+
+.acceptbtn {cursor:pointer; color: #606060; border: solid 1px #b7b7b7;
+	background: #fff; background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));}
+.acceptbtn:hover {background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));}
+
+.upload { border-radius:5px; color: #606060; border: solid 1px #b7b7b7; cursor:pointer; width:80px; height:25px; text-shadow: 0 1px 1px rgba(0,0,0,.1);}
+.upload:hover {background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));}
 
 
 /*Form.js*/
+.uploadbox {margin-top:40px;}
 .inputbox {width:200px; margin-right:5px;}
 
 
