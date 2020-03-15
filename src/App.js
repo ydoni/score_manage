@@ -75,10 +75,12 @@ class App extends Component{
     const {gradelist} = this.state;
 
     return(
-      <div>
+      <div className="container">
         <h1>한국대학교 학점관리시스템</h1>
-        <Form number={this.getGrade} />
-        <InfoList data={gradelist} onRemove={this.deleteGrade} onUpdate={this.updateGrade}  />
+          <div className="formBox">
+            <Form number={this.getGrade} />
+            <InfoList data={gradelist} onRemove={this.deleteGrade} onUpdate={this.updateGrade}  />
+          </div>
       </div>
     );
   }

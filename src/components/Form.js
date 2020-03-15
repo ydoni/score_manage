@@ -34,17 +34,20 @@ class Form extends Component {
 	render () {
 		return (
 
-			<form onSubmit={this.onSubmitValue}>
+			<form className="inputForm" onSubmit={this.onSubmitValue}>
 				<center>
 					<div className="uploadbox">
+						학번
 						<input className="inputbox" placeholder="학번 입력" name="stu_num" value={this.state.stu_num} onChange={this.onChangeValue} />
+						이름
 						<input className="inputbox" placeholder="이름 입력" name="stu_name" value={this.state.stu_name} onChange={this.onChangeValue} />
+						학부
 						<input className="inputbox" placeholder="학부 입력" name="department" value={this.state.department} onChange={this.onChangeValue} />
+						학점
 						<input className="inputbox" placeholder="학점 입력" name="avg_grade" value={this.state.avg_grade} onChange={this.onChangeValue} />
 						<button className="upload" type="submit">등록하기</button>
 					</div>		
 				</center>
-
 			</form>
 
 		);

@@ -28,7 +28,7 @@ class InfoList extends Component {
 
 		return (
 
-			<div>
+			<div className="bigbox" >
 				{list}
 			</div>
 		);

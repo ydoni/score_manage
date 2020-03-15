@@ -114,18 +114,19 @@ class Info extends Component {
 		//오답 ** this.props.info 에서 info 안썼더니 값 안받아와졌음 ㅋㅋ
 
 		return(
-			<div className="bigbox">
+
 				<div className="listbox">
-					<div>학번 : {stu_num}</div>
-					<div>이름 : {stu_name}</div>
-					<div>학부 : {department}</div>
-					<div>학점 : {avg_grade}</div>
+					<ul>
+						<li>학번 : {stu_num}</li>
+						<li>이름 : {stu_name}</li>
+						<li>학부 : {department}</li>
+						<li>학점 : {avg_grade}</li>
+					</ul>
 					<div className="edit_container">
 						<button className="update buttonbox" onClick={this.toggleEditMode}>수정</button>
 						<button className="delete buttonbox" onClick={this.deleteGrade}>삭제</button>
 					</div>
 				</div>
-			</div>
 
 		);
 	}
