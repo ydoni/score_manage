@@ -34,20 +34,21 @@ class Form extends Component {
 	render () {
 		return (
 
-			<form className="inputForm" onSubmit={this.onSubmitValue}>
-				<center>
-					<div className="uploadbox">
-						학번
-						<input className="inputbox" placeholder="학번 입력" name="stu_num" value={this.state.stu_num} onChange={this.onChangeValue} />
-						이름
-						<input className="inputbox" placeholder="이름 입력" name="stu_name" value={this.state.stu_name} onChange={this.onChangeValue} />
-						학부
-						<input className="inputbox" placeholder="학부 입력" name="department" value={this.state.department} onChange={this.onChangeValue} />
-						학점
-						<input className="inputbox" placeholder="학점 입력" name="avg_grade" value={this.state.avg_grade} onChange={this.onChangeValue} />
-						<button className="upload" type="submit">등록하기</button>
-					</div>		
-				</center>
+			<form className="inputForm" onSubmit={this.onSubmitValue}>				
+				<div className="uploadbox">
+					<h4>학점관리</h4>
+					<span>※ 아래 항목을 순서대로 기입하세요.</span><br/>
+					학번
+					<input className="inputbox" placeholder="학번 입력 (ex. 20200101)" name="stu_num" value={this.state.stu_num} onChange={this.onChangeValue} />
+					이름
+					<input className="inputbox" placeholder="이름 입력 (ex. 홍길동)" name="stu_name" value={this.state.stu_name} onChange={this.onChangeValue} />
+					학부
+					<input className="inputbox" placeholder="학부 입력 (ex. 국어국문학부)" name="department" value={this.state.department} onChange={this.onChangeValue} />
+					학점
+					<input className="inputbox" placeholder="학점 입력 (ex. 3.0)" name="avg_grade" value={this.state.avg_grade} onChange={this.onChangeValue} />
+					<button className="upload buttonbox" type="submit">등록하기</button>
+				</div>		
+				
 			</form>
 
 		);

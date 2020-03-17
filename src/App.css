@@ -1,10 +1,12 @@
-body {background-color: #fdfdfd; font-family: 'NanumBarunGothic', 'serif'; }
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,500,700,800');
+body {background-color: #fdfdfd; font-family: 'Nanum Gothic', 'serif'; font-size:.875em; }
 h1 {text-align:center; margin-top:50px;}
+h4 {margin:15px 0 0; font-size:1.25em;}
 ul, li {list-style: none; margin:0; padding:0;}
 
 
 /*App.js*/
-.formBox {width:750px; height:480px; margin:40px auto; box-sizing:border-box;}
+.formBox {width:750px; height:480px; margin:50px auto; box-sizing:border-box;}
 
 
 
@@ -12,34 +14,94 @@ ul, li {list-style: none; margin:0; padding:0;}
 .listbox {width:180px; height:140px; background-color: #fff; border:.8px solid #ededed;  margin:0 5px 5px 0;
 	float:left;}
 .listbox ul {width:160px; margin:10px auto;}
-.listbox ul li {padding:2px 0;}
+.listbox ul li {padding:2px 0; font-weight:500;}
 .edit_container {text-align: center; }
-.edit_container .buttonbox {  border-radius:5px; }
+
+.buttonbox {
+	margin-top:5px;
+	padding:2px 6px;
+	border-radius:5px;
+	color: #595959;
+	border: solid .7px #b7b7b7;
+	cursor:pointer;
+	background-color: #fff;
+	font-size:.875em;
+}
+
+
+.acceptbox .acceptinput {
+	width:150px;
+	padding:1px;
+	margin-bottom:5px;
+}
+.acceptbox .acceptbtn {
+	margin-top:5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+}
+.acceptbox .acceptbtn:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+}
 
 
 
-.update {color: #fff; border: solid 1px #0076a3; margin-right:10px;
-    background: #ddd; }
-.update:hover {color: #fff; background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));}
-.update:active {color: #80bed6; background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));}
 
-.delete {color: #fff; border: solid 1px #980c10; background: #d81b21;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));}
-.delete:hover {color: #fff; background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));}
+.update {	
+	margin-right:10px;
+    background: #fff;
+}
+.update:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+}
+.delete {
+	background: #ededed;
+}
+.delete:hover {
+	color:#fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+}
 
-.acceptbtn {cursor:pointer; color: #606060; border: solid 1px #b7b7b7;
-	background: #fff; background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));}
-.acceptbtn:hover {background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));}
 
-.upload { border-radius:5px; color: #ddd; border: solid 1px #b7b7b7; cursor:pointer;
-	width:80px; height:25px; text-shadow: 0 1px 1px rgba(0,0,0,.1); margin-top:30px; }
-.upload:hover {background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));}
+
+.upload {
+	width:80px;
+	height:25px;
+	margin-top:10px;
+	float:right;	
+}
+.upload:hover {
+	color: #595959;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+}
 
 
 /*Form.js*/
-.inputForm {width:300px; height:433px; margin-right:50px; float:left; background-color:#fff; border:.8px solid #ededed;}
-.uploadbox {margin-top:40px;}
-.inputbox {width:200px; padding:3px; margin:5px 0 20px; display:block;}
+.inputForm {
+	width:300px;
+	height:433px;
+	margin-right:50px;
+	float:left;
+	background-color:#fff;
+	border:.8px solid #ededed;
+}
+.uploadbox {
+	width:210px;
+	font-size:1.1em;
+	font-weight:700;
+	margin:30px auto;
+}
+.inputbox {
+	width:200px;
+	padding:3px;
+	margin:5px auto 20px;
+	display:block;
+}
+.inputForm span {
+	display: block;
+	margin:5px 0;
+	font-weight: 500;
+	font-size:.75em;
+	color: #595959;
+}
 
 
 

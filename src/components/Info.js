@@ -88,22 +88,20 @@ class Info extends Component {
 		//이 조건이 성립되면 여기서만 return 된다.
 		if (editing) {
 			return (
-				<div className="bigbox">
-					<div className="listbox">
-						<div>
-							<input placeholder="학번 수정" name="stu_num" value ={this.state.stu_num} onChange = {this.onChangeValue}/>						
-						</div>
-						<div>
-							<input placeholder="이름 수정" name="stu_name" value ={this.state.stu_name} onChange={this.onChangeValue}/>
-						</div>
-						<div>
-							<input placeholder="학부 수정" name="department" value ={this.state.department} onChange = {this.onChangeValue}/>						
-						</div>
-						<div>
-							<input placeholder="학점 수정" name="avg_grade" value ={this.state.avg_grade} onChange={this.onChangeValue}/>
-						</div>
-						<button className="acceptbtn buttonbox" onClick = {this.toggleEditMode}> 적용 </button>
+				<div className="listbox acceptbox">
+					<div>
+						<input className="acceptinput" placeholder="학번 수정" name="stu_num" value ={this.state.stu_num} onChange = {this.onChangeValue}/>						
 					</div>
+					<div>
+						<input className="acceptinput" placeholder="이름 수정" name="stu_name" value ={this.state.stu_name} onChange={this.onChangeValue}/>
+					</div>
+					<div>
+						<input className="acceptinput" placeholder="학부 수정" name="department" value ={this.state.department} onChange = {this.onChangeValue}/>						
+					</div>
+					<div>
+						<input className="acceptinput" placeholder="학점 수정" name="avg_grade" value ={this.state.avg_grade} onChange={this.onChangeValue}/>
+					</div>
+					<button className="acceptbtn buttonbox" onClick = {this.toggleEditMode}> 적용 </button>
 				</div>
 			);
 		}
