@@ -4,7 +4,7 @@
 ****
 
 
-**프로젝트 목적**
+**1) 프로젝트 목적**
 
 'React'를 통해 기본적인 CRUD 기능을 구현하도록 한다.
 > CRUD 기능 (등록, 읽기, 수정, 삭제)
@@ -13,7 +13,7 @@ Create / Read / Update / Delete
 
 
 
-**컴포넌트 구조**
+**2) 컴포넌트 구조**
 ![react_project_01_구조](https://user-images.githubusercontent.com/56074618/76167675-c7f14080-61ab-11ea-82bd-c9d4b08f9a4e.jpg)
 
 
