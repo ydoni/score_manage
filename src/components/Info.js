@@ -43,6 +43,8 @@ class Info extends Component {
 		})
 	}
 
+	
+
 
 	//lifecycle 함수 사용
 	//render()가 작동된 이후에 실행된다.
@@ -88,21 +90,23 @@ class Info extends Component {
 		//이 조건이 성립되면 여기서만 return 된다.
 		if (editing) {
 			return (
-				<div className="listbox acceptbox">
+				<table className="table table-condensed">
+				<div className="acceptbox">
 					<div>
-						<input className="acceptinput" placeholder="학번 수정" name="stu_num" value ={this.state.stu_num} onChange = {this.onChangeValue}/>						
+						<input className="form-control" placeholder="학번 수정" name="stu_num" value ={this.state.stu_num} onChange = {this.onChangeValue}/>						
 					</div>
 					<div>
-						<input className="acceptinput" placeholder="이름 수정" name="stu_name" value ={this.state.stu_name} onChange={this.onChangeValue}/>
+						<input className="form-control" placeholder="이름 수정" name="stu_name" value ={this.state.stu_name} onChange={this.onChangeValue}/>
 					</div>
 					<div>
-						<input className="acceptinput" placeholder="학부 수정" name="department" value ={this.state.department} onChange = {this.onChangeValue}/>						
+						<input className="form-control" placeholder="학부 수정" name="department" value ={this.state.department} onChange = {this.onChangeValue}/>						
 					</div>
 					<div>
-						<input className="acceptinput" placeholder="학점 수정" name="avg_grade" value ={this.state.avg_grade} onChange={this.onChangeValue}/>
+						<input className="form-control" placeholder="학점 수정" name="avg_grade" value ={this.state.avg_grade} onChange={this.onChangeValue}/>
 					</div>
-					<button className="acceptbtn buttonbox" onClick = {this.toggleEditMode}> 적용 </button>
-				</div>
+					<button className="btn btn-default accept" onClick = {this.toggleEditMode}> 적용 </button>
+					</div>
+				</table>
 			);
 		}
 
@@ -112,17 +116,38 @@ class Info extends Component {
 		//오답 ** this.props.info 에서 info 안썼더니 값 안받아와졌음 ㅋㅋ
 
 		return(
-
-				<div className="listbox">
-					<ul>
-						<li>학번 : {stu_num}</li>
-						<li>이름 : {stu_name}</li>
-						<li>학부 : {department}</li>
-						<li>학점 : {avg_grade}</li>
-					</ul>
-					<div className="edit_container">
-						<button className="update buttonbox" onClick={this.toggleEditMode}>수정</button>
-						<button className="delete buttonbox" onClick={this.deleteGrade}>삭제</button>
+			<div>
+				<div className="box ">
+					<table className="table table-condensed " >
+						<tr className="active">
+							<th>항목</th>
+							<th>내용</th>
+						</tr>
+						<tr>
+							<td className="active">학번</td>
+							<td>{stu_num}</td>
+						</tr>
+						<tr>
+							<td>이름</td>
+							<td>{stu_name}</td>
+						</tr>
+						<tr>
+							<td>학부</td>
+							<td>{department}</td>
+						</tr>
+						<tr>
+							<td>학점</td>
+							<td>{avg_grade}</td>
+						</tr>
+						<tr>
+							<td colspan="2"className="edit_container">
+								<button className="update btn-default btn" onClick={this.toggleEditMode}>수정</button>
+								<button className="btn-danger btn" onClick={this.deleteGrade}>삭제</button>
+							</td>
+						</tr>
+						</table>					
+						
+						
 					</div>
 				</div>
 

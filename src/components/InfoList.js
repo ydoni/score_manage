@@ -4,6 +4,8 @@ import Info from './Info.js';
 //리스트를 관리하는 컴포넌트
 
 
+	
+
 class InfoList extends Component {
 
 	render (){
@@ -27,9 +29,10 @@ class InfoList extends Component {
 		*/
 
 		return (
-
-			<div className="bigbox" >
+			<div className="col-xs-6 col-sm-6">
+			<div className="bigbox " >
 				{list}
+			</div>
 			</div>
 		);
 

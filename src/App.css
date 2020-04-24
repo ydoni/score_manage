@@ -1,111 +1,148 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,500,700,800');
-body {background-color: #fdfdfd; font-family: 'Nanum Gothic', 'serif'; font-size:.875em; }
-h1 {text-align:center; margin-top:50px;}
-h4 {margin:15px 0 0; font-size:1.25em;}
+body {background-color: #fdfdfd; font-family: 'Nanum Gothic', 'serif'; font-size:.7em; }
+h5 {font-weight: 700;}
 ul, li {list-style: none; margin:0; padding:0;}
 
 
 /*App.js*/
-.formBox {width:750px; height:480px; margin:50px auto; box-sizing:border-box;}
+.navbar {
+    background-color: #222;
+    border-color: #080808;
+}
+.rightbar {
+	float:right;
+}
+.navbar .searchKeyword {
+	width:180px;
+	height:32px;
+	float:left;
+	font-size:1.1em;
+}
 
+/*.navbar .searchKeyword::placeholder {
+	font-size:.78em;
+}*/
+
+
+.navbar-collapse {
+	flex-basis: unset;
+    flex-grow: unset;
+    align-items: center;
+}
+
+.formBox {
+	margin:50px auto;
+	box-sizing:border-box;
+}
+
+a {
+	color:#fff;
+}
+a:hover {
+	color:#ccc;
+}
+.search {
+	color:#fff;
+}
 
 
 /*Info.js*/
-.listbox {width:180px; height:140px; background-color: #fff; border:.8px solid #ededed;  margin:0 5px 5px 0;
-	float:left;}
-.listbox ul {width:160px; margin:10px auto;}
-.listbox ul li {padding:2px 0; font-weight:500;}
-.edit_container {text-align: center; }
+.table {
+	width:180px;
+	height:185px;
+	border:1px solid #ededed; 
+	margin:0 5px 5px 0;
+	float:left;
+	font-size:1.15em;
+}
 
-.buttonbox {
+.table th, .table td {
+    padding: 0.4rem;
+}
+.edit_container {
+	text-align: center;
+}
+
+.btn {
 	margin-top:5px;
 	padding:2px 6px;
 	border-radius:5px;
 	color: #595959;
 	border: solid .7px #b7b7b7;
-	cursor:pointer;
 	background-color: #fff;
-	font-size:.875em;
+	font-size:.9em;
 }
 
 
-.acceptbox .acceptinput {
+.acceptbox {
+	position:relative;
+	margin-top:30px;
+}
+.acceptbox .form-control {
 	width:150px;
-	padding:1px;
+	height:20px;
 	margin-bottom:5px;
+	font-size:.95em;
 }
-.acceptbox .acceptbtn {
-	margin-top:5px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
-}
-.acceptbox .acceptbtn:hover {
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
-}
-
-
-
-
 .update {	
-	margin-right:10px;
-    background: #fff;
+	margin-right:5px;
 }
-.update:hover {
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
-}
-.delete {
-	background: #ededed;
-}
-.delete:hover {
-	color:#fff;
-	background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+.accept {	
+	position:absolute;
+	right:10px;
 }
 
 
-
-.upload {
-	width:80px;
-	height:25px;
-	margin-top:10px;
-	float:right;	
-}
-.upload:hover {
-	color: #595959;
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
-}
 
 
 /*Form.js*/
-.inputForm {
-	width:300px;
-	height:433px;
-	margin-right:50px;
-	float:left;
-	background-color:#fff;
-	border:.8px solid #ededed;
+.form-horizontal {
+	/*width:50%;*/
+	height:450px;
+	/*margin-left:250px;*/
+	/*border:.8px solid #ededed;*/
 }
-.uploadbox {
+.form-horizontal .form-group {
 	width:210px;
-	font-size:1.1em;
 	font-weight:700;
-	margin:30px auto;
+	margin:10px auto;
 }
-.inputbox {
-	width:200px;
-	padding:3px;
-	margin:5px auto 20px;
-	display:block;
+.form-horizontal .form-group label {
+	font-size:1.29em;
+	margin-bottom :5px;
 }
-.inputForm span {
-	display: block;
-	margin:5px 0;
-	font-weight: 500;
+.form-horizontal .form-control {
+	width:250px;
+	height:35px;
+	margin:0 auto 10px;
+}
+.form-horizontal .form-control::placeholder{
 	font-size:.75em;
+}
+.form-horizontal .form-group span {
+	display: block;
 	color: #595959;
 }
 
-
+.upload {
+	width:80px;
+	height:30px;
+	margin-top:10px;
+	float:right;
+	font-size:1em;
+}
 
 
 
 /*InfoList.js*/
-.bigbox {width:398px; overflow: hidden; overflow-y: auto; height:450px;}
+.bigbox {
+	width:398px;
+	overflow: hidden;
+	overflow-y: auto;
+	height:450px;
+	margin-left:20px;
+}
+
+
+
+
