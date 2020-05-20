@@ -9,6 +9,11 @@
 기여도 | 100%
 
 **개발 기능**
+
+BootStrap 사용 : BootStrap을 통한 반응형 페이지 제작
+
+React : 리액트의 CRUD 및 검색 기능
+
 ![Untitled-1-01-01](https://user-images.githubusercontent.com/56074618/82452082-c4eac880-9ae9-11ea-9273-c73802e15255.jpg)
 
 
@@ -18,14 +23,6 @@
 **개발 목적**
 
 리액트의 CRUD 기능, 검색 기능과 BootStrap을 통해 반응형 CSS를 적용합니다.
-
-
-
-**기술**
-
-BootStrap 사용 : BootStrap을 통한 반응형 페이지 제작
-React : 리액트의 CRUD 및 검색 기능
-
 
 
 **개발 내용**
