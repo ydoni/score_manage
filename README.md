@@ -19,6 +19,9 @@ React : 리액트의 CRUD 및 검색 기능
 
 **프로젝트 시행 영상**
 
+[![score_manage](http://img.youtube.com/vi/Z9UGkfMAna0/0.jpg)](https://youtu.be/Z9UGkfMAna0)
+
+※ 위 영상을 클릭하면 시행영상이 나옵니다.
 
 **개발 목적**
 
